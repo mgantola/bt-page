@@ -1,0 +1,8 @@
+<p>player works!</p>
+<p>Player ID: {{ playerId() }}</p>
+
+@if (selectedPlayer(); as player) {
+  <h2>{{ player.Nombre }}</h2>
+} @else {
+  <p>No se encontro el jugador para el id: {{ playerId() }}</p>
+}
